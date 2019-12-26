@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E05ACBD-709E-4F39-8084-312C2A9CE35B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Advent_of_Code_2019</RootNamespace>
+    <AssemblyName>Advent of Code 2019</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Day1.cs" />
+    <Compile Include="Day10.cs" />
+    <Compile Include="Day11.cs" />
+    <Compile Include="Day12.cs" />
+    <Compile Include="Day13.cs" />
+    <Compile Include="Day14.cs" />
+    <Compile Include="Day15.cs" />
+    <Compile Include="Day16.cs" />
+    <Compile Include="Day17.cs" />
+    <Compile Include="Day18_2.cs" />
+    <Compile Include="Day18.cs" />
+    <Compile Include="Day19.cs" />
+    <Compile Include="Day2.cs" />
+    <Compile Include="Day20.cs" />
+    <Compile Include="Day21.cs" />
+    <Compile Include="Day22.cs" />
+    <Compile Include="Day23.cs" />
+    <Compile Include="Day24.cs" />
+    <Compile Include="Day25.cs" />
+    <Compile Include="Day3.cs" />
+    <Compile Include="Day4.cs" />
+    <Compile Include="Day5.cs" />
+    <Compile Include="Day6.cs" />
+    <Compile Include="Day7.cs" />
+    <Compile Include="Day8.cs" />
+    <Compile Include="Day9.cs" />
+    <Compile Include="Intcode.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
